@@ -8,22 +8,16 @@ DataMapper.setup(:default, "postgres://localhost/bookmark_manager_#{env}")
 require './app/models/link'
 require './app/models/tag'
 require './app/models/user'
-#require_relative 'helpers/application'
+require './app/helpers/application'
 
 class BookmarkManager < Sinatra::Base
+
+  helpers BookMarkUtils
 
   enable :sessions
   set :session_secret, 'super secret'
 
   set :views, Proc.new { File.join(root, "views")}
-
-  helpers do
-
-    def current_user
-      @current_user ||= User.get(session[:user_id]) if session[:user_id]
-    end
-
-  end
 
   get '/' do
      @links = Link.all
