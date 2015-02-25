@@ -3,13 +3,19 @@ require 'sinatra'
 
 class BookmarkManager < Sinatra::Base
 
-set :views, Proc.new { File.join(root, "views")}
+  set :views, Proc.new { File.join(root, "views")}
 
-get '/' do
-   @links = Link.all
-   erb :index
+  get '/' do
+     @links = Link.all
+     erb :index
   end
 
+  post '/links' do
+      url = params["url"]
+      title = params["title"]
+      Link.create(:url => url, :title => title)
+      redirect to('/')
+  end
 
 end
 
