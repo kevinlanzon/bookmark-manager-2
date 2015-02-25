@@ -29,4 +29,5 @@ require 'spec_helper'
       expect(page).to have_content("Google")
       expect(page).to have_content("Bing")
     end
+
 end
