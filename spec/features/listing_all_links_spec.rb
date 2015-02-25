@@ -12,4 +12,6 @@ require 'spec_helper'
       expect(page).to have_content("Makers Academy")
     end
 
+
+
   end
