@@ -7,11 +7,7 @@ require_relative 'models/tag'
 require_relative 'models/user'
 require_relative 'helpers/application'
 
-require_relative 'controllers/users'
-require_relative 'controllers/sessions'
-require_relative 'controllers/links'
-require_relative 'controllers/tags'
-require_relative 'controllers/application'
+
 
 class BookmarkManager < Sinatra::Base
 
@@ -26,7 +22,15 @@ require_relative 'data_mapper_setup'
   register Sinatra::Partial
   set :partial_template_engine, :erb
   set :views, Proc.new { File.join("./app/views") }
+  set :public_folder, Proc.new { File.join(root, "..", "public") }
+
 
   run! if app_file == $0
 
 end
+
+require_relative 'controllers/users'
+require_relative 'controllers/sessions'
+require_relative 'controllers/links'
+require_relative 'controllers/tags'
+require_relative 'controllers/application'
