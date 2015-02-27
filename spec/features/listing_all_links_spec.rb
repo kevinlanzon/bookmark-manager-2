@@ -22,12 +22,14 @@ require 'spec_helper'
       expect(page).to have_content("Makers Academy")
     end
 
-    scenario "filtered by a tag" do
-      visit '/tags/search'
+   scenario "filtered by a tag" do
+    visit '/tags/search'
+    within("#links") do
       expect(page).not_to have_content("Makers Academy")
       expect(page).not_to have_content("Code.org")
       expect(page).to have_content("Google")
       expect(page).to have_content("Bing")
     end
+  end
 
 end
