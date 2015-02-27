@@ -8,4 +8,8 @@ class BookmarkManager < Sinatra::Base
     redirect to('/')
   end
 
+  get '/links/new' do
+    erb :"links/new"
+  end
+
 end
