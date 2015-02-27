@@ -47,3 +47,30 @@ header {
     -webkit-flex: 1;
     text-align: right;
   }
+
+#links-container {
+  background-color: white;
+  margin: 40px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  padding: 10px;
+}
+
+.link {
+  background-color: #EEE;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  margin: 10px inherit;
+  padding: 15px 10px;
+}
+
+  .link a.title {
+    letter-spacing: 1px;
+  }
+
+  .link .description {
+    margin: 10px inherit;
+  }
+
+  .link .source {
+    float: right;
+    font-size: 12px;
+  }
