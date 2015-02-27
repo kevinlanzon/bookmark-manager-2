@@ -3,6 +3,11 @@ body {
   background-image: url(/images/extra_clean_paper.png)
 }
 
+a {
+  text-decoration: none;
+  color: #b77843;
+}
+
 a.button {
   display: inline-block;
   width: 80px;
@@ -35,11 +40,11 @@ header {
   }
   header #logo {
     display: flex;
+    margin-right: 20px;
   }
 
   header a {
     color: white;
-    text-decoration: none;
   }
 
   header #user-links {
@@ -85,7 +90,6 @@ header {
   }
 
   footer img {
-
     vertical-align: top;
   }
 
