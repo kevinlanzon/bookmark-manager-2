@@ -17,5 +17,5 @@ A second run through of the Makers Academy week 5 project paired with [Chris](ht
 
 ### Instructions
 
-To run the application run `rackup` and visit
+To run the application - git clone git@github.com:kevinlanzon/bookmark-manager-2.git then run `rackup` and visit
 `localhost:9292` in the browser.
