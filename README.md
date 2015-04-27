@@ -21,11 +21,6 @@ The goal is to expose you to the following aspects of web development:
 * Heroku
 * PostgreSQL
 
-### Instructions
-
-To run the application - git clone git@github.com:kevinlanzon/bookmark-manager-2.git then run `rackup` and visit
-`localhost:9292` in the browser.
-
 How to clone this repo
 ----
 ```sh
