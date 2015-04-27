@@ -10,7 +10,7 @@ The goal is to expose you to the following aspects of web development:
 - More Acceptance testing with Capybara
 
 Technologies Used
-===============
+-----
 * Sinatra
 * DataMapper
 * Bcrypt
