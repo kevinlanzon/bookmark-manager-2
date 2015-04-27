@@ -25,12 +25,12 @@ Technologies Used
 How to clone this repo
 ----
 ```sh
-git clone git@github.com:kevinlanzon/takeaway-challenge.git
+git clone git@github.com:kevinlanzon/bookmark-manager-2.git
 ```
 How to run 
 ----
 ```sh
-cd takeaway-challenge
+cd bookmark-manager-2
 rackup
 ```
 visit `localhost:9292` in the browser
