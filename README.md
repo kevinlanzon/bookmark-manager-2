@@ -9,7 +9,8 @@ The goal is to expose you to the following aspects of web development:
 - Security considerations
 - More Acceptance testing with Capybara
 
-### Technologies Used
+Technologies Used
+===============
 * Sinatra
 * DataMapper
 * Bcrypt
